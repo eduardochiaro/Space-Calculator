@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE08927D1DEC9B02006D4FEC /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE08927C1DEC9B02006D4FEC /* btn.wav */; };
 		DEECCA361DEB57CA00D3C415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECCA351DEB57CA00D3C415 /* AppDelegate.swift */; };
 		DEECCA381DEB57CA00D3C415 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECCA371DEB57CA00D3C415 /* ViewController.swift */; };
 		DEECCA3B1DEB57CA00D3C415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEECCA391DEB57CA00D3C415 /* Main.storyboard */; };
 		DEECCA3D1DEB57CA00D3C415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEECCA3C1DEB57CA00D3C415 /* Assets.xcassets */; };
 		DEECCA401DEB57CA00D3C415 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEECCA3E1DEB57CA00D3C415 /* LaunchScreen.storyboard */; };
+		DEECCA481DEB684B00D3C415 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEECCA471DEB684B00D3C415 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE08927C1DEC9B02006D4FEC /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		DEECCA321DEB57CA00D3C415 /* retro-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "retro-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEECCA351DEB57CA00D3C415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEECCA371DEB57CA00D3C415 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		DEECCA3C1DEB57CA00D3C415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEECCA3F1DEB57CA00D3C415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEECCA411DEB57CA00D3C415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEECCA471DEB684B00D3C415 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				DEECCA351DEB57CA00D3C415 /* AppDelegate.swift */,
 				DEECCA371DEB57CA00D3C415 /* ViewController.swift */,
 				DEECCA391DEB57CA00D3C415 /* Main.storyboard */,
+				DEECCA471DEB684B00D3C415 /* Minecraft.ttf */,
+				DE08927C1DEC9B02006D4FEC /* btn.wav */,
 				DEECCA3C1DEB57CA00D3C415 /* Assets.xcassets */,
 				DEECCA3E1DEB57CA00D3C415 /* LaunchScreen.storyboard */,
 				DEECCA411DEB57CA00D3C415 /* Info.plist */,
@@ -124,8 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE08927D1DEC9B02006D4FEC /* btn.wav in Resources */,
 				DEECCA401DEB57CA00D3C415 /* LaunchScreen.storyboard in Resources */,
 				DEECCA3D1DEB57CA00D3C415 /* Assets.xcassets in Resources */,
+				DEECCA481DEB684B00D3C415 /* Minecraft.ttf in Resources */,
 				DEECCA3B1DEB57CA00D3C415 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E5SWLPU3LR;
 				INFOPLIST_FILE = "retro-calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eduardochiaro.retro-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E5SWLPU3LR;
 				INFOPLIST_FILE = "retro-calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eduardochiaro.retro-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +310,7 @@
 				DEECCA461DEB57CA00D3C415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
