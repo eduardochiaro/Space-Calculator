@@ -24,9 +24,9 @@ class ViewController: UIViewController {
     var btnSound: AVAudioPlayer!
     
     var runningNumbers = ""
-    var leftValStr = ""
-    var rightValStr = ""
-    var result = ""
+    var leftValStr = "0"
+    var rightValStr = "0"
+    var result = "0"
     
     var currentOperation: Operation = Operation.Empty
 
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        outputLbl.text = "0"
+        outputLbl.text = result;
         
         
         let _path = Bundle.main.path(forResource: "btn", ofType: "wav")
@@ -74,9 +74,21 @@ class ViewController: UIViewController {
     @IBAction func onEqualPress(_ sender: Any) {
         processOperation(op: currentOperation)
     }
+    @IBAction func onClearPress(_ sender: Any) {
+        processOperation(op: Operation.Empty)
+    }
     
     func processOperation(op: Operation) {
         playSound()
+        
+        if op == Operation.Empty {
+            runningNumbers = ""
+            leftValStr = "0"
+            rightValStr = "0"
+            currentOperation = Operation.Empty
+            
+            outputLbl.text = "0"
+        }
         
         if currentOperation != Operation.Empty {
             //run
@@ -85,14 +97,18 @@ class ViewController: UIViewController {
                 rightValStr = runningNumbers
                 runningNumbers = ""
                 
+                if leftValStr == "" {
+                    leftValStr = "0"
+                }
+                
                 if currentOperation == Operation.Multiply {
-                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                    result = "\(Int(leftValStr)! * Int(rightValStr)!)"
                 } else if currentOperation == Operation.Subtract {
-                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                    result = "\(Int(leftValStr)! - Int(rightValStr)!)"
                 } else if currentOperation == Operation.Add {
-                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                    result = "\(Int(leftValStr)! + Int(rightValStr)!)"
                 } else if currentOperation == Operation.Divide {
-                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                    result = "\(Int(leftValStr)! / Int(rightValStr)!)"
                 }
                 
                 leftValStr = result
